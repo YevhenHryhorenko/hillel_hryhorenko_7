@@ -16,7 +16,23 @@ body {
 	background-color: var(--usual-white);
 	box-sizing: border-box;
 	border: 1px solid #eeeeee;
+
+	/* ---------------------------------- */
+	/* Realization using inline-block */
+	/* ---------------------------------- */
+
+	/* display: inline-block;
+	margin-right: 30px;
+	margin-bottom: 30px; */
 }
+
+/* ---------------------------------- */
+/* Realization using inline-block */
+/* ---------------------------------- */
+
+/* .project:nth-child(3n) {
+	margin-right: 0;
+} */
 
 .project-header {
 	font-weight: 700;
@@ -35,19 +51,35 @@ body {
 }
 
 .list-project {
+	/* ---------------------------------- */
+	/* Realization using inline-block */
+	/* ---------------------------------- */
+
+	/* padding: 0;
+	text-align: center; */
+
+	/* ---------------------------------- */
+	/* Realization using grid */
+	/* ---------------------------------- */
+	
 	list-style: none;
+	padding: 0;
 	display: grid;
 	gap: 30px;
 	grid-template-columns: repeat(3, 370px);
 	justify-content: center;
 
+	/* ---------------------------------- */
+	/* Realization using flex */
+	/* ---------------------------------- */
+
 	/* list-style: none;
 	display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
 	gap: 30px;
-    justify-content: center; */
+	justify-content: center; */
 }
 
 .project:hover,
