@@ -15,7 +15,6 @@ body {
 .project {
 	background-color: var(--usual-white);
 	box-sizing: border-box;
-	border: 1px solid #eeeeee;
 
 	/* ---------------------------------- */
 	/* Realization using inline-block */
@@ -34,20 +33,24 @@ body {
 	margin-right: 0;
 } */
 
+.description-wrapper {
+	padding: 20px 24px;
+}
+
 .project-header {
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
 	color: var(--color-text);
-	padding: 0px 24px 0px 24px;
+	margin-top: 0;
 }
 
 .project-type {
 	line-height: 2;
 	letter-spacing: 0.03em;
 	color: #757575;
-	padding: 0px 24px 0px 24px;
+	margin: 0;
 }
 
 .list-project {
@@ -61,7 +64,7 @@ body {
 	/* ---------------------------------- */
 	/* Realization using grid */
 	/* ---------------------------------- */
-	
+
 	list-style: none;
 	padding: 0;
 	display: grid;
