@@ -1,0 +1,57 @@
+:root {
+	--color-text: #212121;
+	--usual-white: #ffffff;
+}
+
+body {
+	font-family: "Roboto", Arial, Helvetica sans-serif;
+	color: var(--color-text);
+	font-size: 16px;
+	background-color: var(--usual-white);
+	margin: 0;
+	padding: 0;
+}
+
+.project {
+	background-color: var(--usual-white);
+	box-sizing: border-box;
+	border: 1px solid #eeeeee;
+}
+
+.project-header {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.06em;
+	color: var(--color-text);
+	padding: 0px 24px 0px 24px;
+}
+
+.project-type {
+	line-height: 2;
+	letter-spacing: 0.03em;
+	color: #757575;
+	padding: 0px 24px 0px 24px;
+}
+
+.list-project {
+	list-style: none;
+	display: grid;
+	gap: 30px;
+	grid-template-columns: repeat(3, 370px);
+	justify-content: center;
+
+	/* list-style: none;
+	display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+	gap: 30px;
+    justify-content: center; */
+}
+
+.project:hover,
+.project:focus {
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+}
